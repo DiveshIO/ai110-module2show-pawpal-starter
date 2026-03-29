@@ -4,8 +4,25 @@
 
 **a. Initial design**
 
+The app lets a user enter basic owner + pet info, add/edit tasks (with duration and priority), generate a daily schedule based on constraints and priorities, and display the plan with reasoning.
+
 - Briefly describe your initial UML design.
+  - User enters their own info (name, available time per day, preferences)
+  - User enters pet info (name, age, type/breed)
+  - User adds/edits tasks with at least a duration and priority level
+  - A scheduler generates a daily plan respecting constraints
+  - The plan is displayed with an explanation of the choices made
+
 - What classes did you include, and what responsibilities did you assign to each?
+
+See [class_diagram.md](class_diagram.md) for the full UML class diagram.
+
+**Class responsibilities:**
+
+- **Owner** — holds user identity and constraints (how much time they have per day, their preferences). Acts as the entry point for the app.
+- **Pet** — stores all pet information including special needs (medication, dietary restrictions) that the scheduler must respect.
+- **Task** — a single care activity with a type (walk, feed, meds, grooming), duration, priority level (high/medium/low), and status (pending/completed/rescheduled).
+- **Scheduler** — the core logic class. Takes the owner's available time and the full task list, sorts by priority, fits tasks within the time budget, and produces an ordered daily plan with reasoning.
 
 **b. Design changes**
 
