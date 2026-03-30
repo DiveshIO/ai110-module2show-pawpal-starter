@@ -28,6 +28,7 @@ See [class_diagram.md](class_diagram.md) for the full UML class diagram.
 
 - Did your design change during implementation?
 - If yes, describe at least one change and why you made it.
+  I have asked ai to modify bit of my methods where it had create some unique variables where it had some stuff missing.
 
 ---
 
@@ -41,7 +42,9 @@ See [class_diagram.md](class_diagram.md) for the full UML class diagram.
 **b. Tradeoffs**
 
 - Describe one tradeoff your scheduler makes.
+
 - Why is that tradeoff reasonable for this scenario?
+  tradeoff is that schedule war abotu the conflict without fixing it, but it keeps the overlapping tasks in the plan.
 
 ---
 

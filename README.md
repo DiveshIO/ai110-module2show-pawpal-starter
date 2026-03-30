@@ -32,6 +32,10 @@ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+## Smarter Scheduling
+
+Recurring tasks auto-schedule themselves, conflicts throw a warning, and you can filter by pet or status.
+
 ### Suggested workflow
 
 1. Read the scenario carefully and identify requirements and edge cases.
