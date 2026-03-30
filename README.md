@@ -36,6 +36,12 @@ pip install -r requirements.txt
 
 Recurring tasks auto-schedule themselves, conflicts throw a warning, and you can filter by pet or status.
 
+## Testing PawPal+
+
+`python -m pytest`
+There is 5 test: mark a test complete, add a task for pet, sort time, complete task and get, check two overlap.
+4.5 confidence in relability
+
 ### Suggested workflow
 
 1. Read the scenario carefully and identify requirements and edge cases.
