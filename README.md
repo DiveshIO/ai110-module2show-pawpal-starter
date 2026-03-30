@@ -32,6 +32,14 @@ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+## Features
+
+- **Sorting by time** — tasks are always displayed in chronological order using `sorted()` with a `strptime` key
+- **Conflict warnings** — if two tasks overlap, the app flags them with a warning instead of silently dropping either one
+- **Daily and weekly recurrence** — completing a recurring task automatically creates the next occurrence using `timedelta`
+- **Filter by pet or status** — view only one pet's tasks, or just what's still pending for the day
+- **Multi-pet support** — one owner can have multiple pets, each with their own task list
+
 ## Smarter Scheduling
 
 Recurring tasks auto-schedule themselves, conflicts throw a warning, and you can filter by pet or status.
